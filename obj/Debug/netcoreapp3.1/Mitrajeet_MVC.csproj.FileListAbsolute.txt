@@ -361,3 +361,5 @@ D:\Imon\Projects\Job Application\Mitrajeet\Mitrajeet_MVC\Mitrajeet_MVC\obj\Debug
 D:\Imon\Projects\Job Application\Mitrajeet\Mitrajeet_MVC\Mitrajeet_MVC\obj\Debug\netcoreapp3.1\Mitrajeet_MVC.genruntimeconfig.cache
 D:\Imon\Projects\Job Application\Mitrajeet\Mitrajeet_MVC\Mitrajeet_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Mitrajeet\Index.cshtml.g.cs
 D:\Imon\Projects\Job Application\Mitrajeet\Mitrajeet_MVC\Mitrajeet_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Mitrajeet\Edit.cshtml.g.cs
+D:\Imon\Projects\Job Application\Mitrajeet\Mitrajeet_MVC\Mitrajeet_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Mitrajeet\Details.cshtml.g.cs
+D:\Imon\Projects\Job Application\Mitrajeet\Mitrajeet_MVC\Mitrajeet_MVC\obj\Debug\netcoreapp3.1\Razor\Views\Mitrajeet\Delete.cshtml.g.cs

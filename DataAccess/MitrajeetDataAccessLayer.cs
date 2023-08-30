@@ -157,5 +157,17 @@ namespace Mitrajeet_MVC.DataAccess
             return states;
         }
 
+        public void DeleteMitrajeet(int? id)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("USP_Delete_Mitrajeets", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id", id);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+        }
     }
 }

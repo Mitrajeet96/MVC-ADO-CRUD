@@ -29,7 +29,8 @@ namespace Mitrajeet_MVC.Controllers
         // GET: MitrajeetController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            MitrajeetModel mjModel = mda.GetMitrajeetDataById(id);
+            return View(mjModel);
         }
 
 
@@ -135,7 +136,8 @@ namespace Mitrajeet_MVC.Controllers
         // GET: MitrajeetController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            MitrajeetModel mjModel = mda.GetMitrajeetDataById(id);
+            return View(mjModel);
         }
 
         // POST: MitrajeetController/Delete/5
@@ -145,6 +147,7 @@ namespace Mitrajeet_MVC.Controllers
         {
             try
             {
+                mda.DeleteMitrajeet(id);
                 return RedirectToAction(nameof(Index));
             }
             catch
