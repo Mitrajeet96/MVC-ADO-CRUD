@@ -146,11 +146,12 @@ namespace Mitrajeet_MVC.Controllers
         public ActionResult Delete(int id, IFormCollection collection)
         {
             try
+                //Not binding
             {
                 mda.DeleteMitrajeet(id);
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
                 return View();
             }

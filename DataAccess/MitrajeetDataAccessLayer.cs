@@ -124,14 +124,14 @@ namespace Mitrajeet_MVC.DataAccess
             List<string> countries = new List<string>();
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                string sqlQuery = "SELECT Country FROM tbl_Mitrajeets";
+                string sqlQuery = "select CountryName from tbl_M_Country order by CountryName";
                 SqlCommand cmd = new SqlCommand(sqlQuery, con);
                 con.Open();
                 SqlDataReader rdr = cmd.ExecuteReader();
                 while (rdr.Read())
                 {
                     //model.Country = rdr["Country"].ToString();
-                    countries.Add(rdr["Country"].ToString());
+                    countries.Add(rdr["CountryName"].ToString());
 
                 }
             }
